@@ -21,7 +21,7 @@
         *raiz = malloc(sizeof(No) * 1);
         if(testa_no(*raiz))
         {
-            (*raiz)->eh_personagem = 'n';
+            (*raiz)->eh_personagem = 'N';
             (*raiz)->sim = NULL;
             (*raiz)->nao = NULL;
             strcpy((*raiz)->conteudo, pergunta_0);
@@ -45,7 +45,7 @@
             
             if(testa_no(*raiz))
             {
-                (*raiz)->eh_personagem = 'n';
+                (*raiz)->eh_personagem = 'N';
                 (*raiz)->sim = NULL;
                 (*raiz)->nao = NULL;
                 strcpy((*raiz)->conteudo, pergunta[pergunta_atual]);
@@ -60,7 +60,7 @@
         else
         {
             *raiz = malloc(sizeof(No));
-            (*raiz)->eh_personagem = 's';
+            (*raiz)->eh_personagem = 'S';
             strcpy((*raiz)->conteudo, "vazio");
             (*raiz)->sim = NULL;
             (*raiz)->nao = NULL;
@@ -92,7 +92,7 @@
             }
             token = strtok(NULL, ",");
         }
-        if(atual != NULL && atual->eh_personagem == 's') strcpy(atual->conteudo, nome);
+        if(atual != NULL && atual->eh_personagem == 'S') strcpy(atual->conteudo, nome);
     }
 
     void preenche_folhas(struct No ** raiz)
@@ -120,13 +120,31 @@
             }
         }
     }
+
+    void Akinator(struct No ** raiz, char perguntas[][51], int pergunta)
+    {
+            if((*raiz)->eh_personagem == 'N')
+            {
+                char resposta = '\0';
+                printf("Pergunta %d: %s\n", pergunta+1, perguntas[pergunta]);
+                scanf(" %c", &resposta);
+                if(resposta == 's' || resposta == 'S') Akinator(&(*raiz)->sim,perguntas,pergunta+1);
+                else Akinator(&(*raiz)->nao,perguntas,pergunta+1);
+            }
+            else
+            {
+                printf("Seu personagem seria: %s\n", (*raiz)->conteudo);
+            }
+            
+    }
         
     void escreve_arvore(struct No ** raiz)
     {
         if((*raiz) != NULL)
         {
             escreve_arvore(&(*raiz)->sim);
-            printf("Pergunta: %s\n", (*raiz)->conteudo);
+            if((*raiz)->eh_personagem == 'N') printf("Pergunta: %s\n", (*raiz)->conteudo);
+            else printf("Personagem: %s\n", (*raiz)->conteudo);
             escreve_arvore(&(*raiz)->nao);
         }
     }
@@ -135,10 +153,10 @@
     {
         char perguntas[5][51] = {"É um filme?", "Tem ação?", "É nacional?", "O tom é leve?", "Tem romance?"};
         struct No *raiz = NULL;
-        escreve_arvore(&raiz);
         preenche_arvore(&raiz, perguntas, 0);
-        escreve_arvore(&raiz);
         preenche_folhas(&raiz);
-        escreve_arvore(&raiz);
+        printf("Thats the american way, made in China! Kinema time\n");
+        Akinator(&raiz,perguntas,0);
+
         free(raiz);
     }
