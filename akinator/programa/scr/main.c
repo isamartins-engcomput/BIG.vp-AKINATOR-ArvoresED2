@@ -155,7 +155,7 @@
         struct No *raiz = NULL;
         preenche_arvore(&raiz, perguntas, 0);
         preenche_folhas(&raiz);
-        printf("Thats the american way, made in China! Kinema time\n");
+        printf("Kinema time\n");
         Akinator(&raiz,perguntas,0);
 
         free(raiz);
