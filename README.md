@@ -1,9 +1,11 @@
-# Morpheus: O Oráculo de Séries e Filmes
-
 <div align="center">
+  <img src="https://raw.githubusercontent.com/isamartins-engcomput/BIG.vp-AKINATOR-ArvoresED2/main/akinator/programa/include/logoMORPHEUSblackBackground.gif" alt="Morpheus Logo Animated" width="400">
+  
+  <br>
+  
   <img src="https://img.shields.io/badge/Linguagem-C-00FFFF?style=for-the-badge&logo=c&logoColor=white&labelColor=1A1A1A" alt="C"/>
   <img src="https://img.shields.io/badge/Estrutura-Árvores%20Binárias-FF0000?style=for-the-badge&labelColor=1A1A1A" alt="Árvores Binárias"/>
-  <img src="https://img.shields.io/badge/Status-Desenvolvimento-00FFFF?style=for-the-badge&labelColor=1A1A1A" alt="Em Desenvolvimento"/>
+  <img src="https://img.shields.io/badge/Ponteiros-Sim%20%2F%20Não-00FFFF?style=for-the-badge&labelColor=1A1A1A" alt="Sim/Não Pointers"/>
   <img src="https://img.shields.io/badge/Instituição-IFMS-FF0000?style=for-the-badge&labelColor=1A1A1A" alt="IFMS"/>
 </div>
 
@@ -11,51 +13,30 @@
 
 ## <img src="https://img.shields.io/badge/-Sobre%20o%20Projeto-1A1A1A?style=flat-square&labelColor=1A1A1A&color=00FFFF" height="20"> Sobre o Projeto
 
-**Morpheus** é um jogo interativo desenvolvido em linguagem **C**, inspirado na mecânica do famoso Akinator. O programa atua como um oráculo focado no universo do entretenimento, sendo capaz de adivinhar a série ou o filme que o usuário está pensando por meio de perguntas de "Sim" ou "Não".
+**Morpheus** é um jogo interativo de adivinhação desenvolvido inteiramente na linguagem **C**. Inspirado no clássico Akinator, o programa atua como um oráculo focado no universo de filmes e séries. Ao iniciar o jogo, o Morpheus guiará o usuário através de perguntas de "Sim" ou "Não" para tentar deduzir o título que o jogador está pensando.
 
-O núcleo da inteligência do Morpheus é baseado em **Árvores Binárias de Decisão**. Cada nó interno da árvore representa uma pergunta, enquanto as folhas (`esq` e `dir`) representam os títulos finais. Quando o Morpheus não consegue adivinhar, ele "aprende", solicitando ao jogador qual era a obra correta e qual pergunta a diferenciaria, inserindo um novo nó dinamicamente na árvore.
+A inteligência por trás do oráculo é baseada em uma **Árvore Binária de Decisão**. O projeto foi estruturado com uma semântica clara e eficiente, onde cada nó interno representa uma pergunta diagnóstica e as folhas (`sim` e `nao`) representam os títulos finais das obras.
 
 Este projeto foi desenvolvido como requisito acadêmico para a disciplina de **Estruturas de Dados II**.
 
 ## <img src="https://img.shields.io/badge/-Funcionalidades-1A1A1A?style=flat-square&labelColor=1A1A1A&color=FF0000" height="20"> Funcionalidades
 
-* **Adivinhação Dinâmica:** Navegação pelos `vlr` da árvore de decisão com base nas respostas (S/N) do usuário.
-* **Aprendizado Contínuo:** Capacidade de adicionar novos filmes, séries e perguntas em tempo de execução, expandindo a base de dados do jogo dinamicamente através de alocação de memória.
-* **Estrutura Otimizada:** Gerenciamento eficiente de ponteiros (`esq`, `dir`) para garantir travessias rápidas até os nós folhas.
+* **Adivinhação Dinâmica:** Navegação recursiva e iterativa pela árvore de decisão baseada diretamente no sistema de ponteiros afirmativos (`sim`) e negativos (`nao`).
+* **Carregamento de Dados:** Povoamento automático e dinâmico das folhas da árvore a partir de arquivos CSV/TXT (`baseDeDados/filmes_e_series`) contendo a rota de características (Ex: S,N,S,N) e o nome da obra.
+* **Módulo de Aprendizado:** Capacidade de expansão da árvore em tempo de execução. Quando o Morpheus falha na adivinhação, ele solicita ao usuário o título correto e a pergunta que diferencia a obra, inserindo um novo nó na estrutura dinamicamente.
 
 ## <img src="https://img.shields.io/badge/-Tecnologias%20Utilizadas-1A1A1A?style=flat-square&labelColor=1A1A1A&color=00FFFF" height="20"> Tecnologias Utilizadas
 
-* **Linguagem:** C padrão (`<stdio.h>`, `<stdlib.h>`)
-* **Estruturas de Dados:** Árvores Binárias, Structs, Ponteiros e Alocação Dinâmica (`malloc`, `free`).
+* **Linguagem:** C padrão (`<stdio.h>`, `<stdlib.h>`, `<string.h>`).
+* **Estruturas de Dados:** Árvores Binárias de Decisão, Structs Otimizados, Ponteiros e Alocação Dinâmica de Memória.
+* **Lógica de Parsing:** Uso eficiente de `strtok` e `fgets` para processamento de base de dados.
 * **Ambiente de Desenvolvimento:** GCC (GNU Compiler Collection).
 
-## <img src="https://img.shields.io/badge/-Como%20Executar-1A1A1A?style=flat-square&labelColor=1A1A1A&color=FF0000" height="20"> Como Executar
-
-Pré-requisitos: Ter um compilador C instalado (como o GCC em ambientes Linux/Debian).
-
-1.  Clone este repositório:
-    ```bash
-    git clone [https://github.com/isamartins-engcomput/BIG.vp-AKINATOR-ArvoresED2.git](https://github.com/isamartins-engcomput/BIG.vp-AKINATOR-ArvoresED2.git)
-    ```
-2.  Acesse a pasta do projeto:
-    ```bash
-    cd BIG.vp-AKINATOR-ArvoresED2
-    ```
-3.  Compile o código-fonte:
-    ```bash
-    gcc -o morpheus main.c
-    ```
-4.  Execute o programa:
-    ```bash
-    ./morpheus
-    ```
-
-## <img src="https://img.shields.io/badge/-Integrantes%20da%20Equipe-1A1A1A?style=flat-square&labelColor=1A1A1A&color=00FFFF" height="20"> Integrantes da Equipe
-
-* Bruno Felix da Silva
-* Gustavo Bossonal dos Santos
-* Isadora de Souza Martins
-* Pedro Sperandio
-
----
-> *"Você toma a pílula azul, a história acaba, você acorda na sua cama e acredita no que quiser. Você toma a pílula vermelha, você fica no País das Maravilhas, e eu te mostro até onde vai a toca do coelho."* - Morpheus
+### Estrutura Semântica do Nó
+```c
+typedef struct No {
+    char eh_personagem; // 'N' para Pergunta, 'S' para Título
+    struct No * sim;    // Ponteiro para resposta afirmativa
+    struct No * nao;    // Ponteiro para resposta negativa
+    char conteudo[51];  // Texto da pergunta ou nome do filme/série
+} No;
