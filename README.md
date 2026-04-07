@@ -32,11 +32,33 @@ Este projeto foi desenvolvido como requisito acadêmico para a disciplina de **E
 * **Lógica de Parsing:** Uso eficiente de `strtok` e `fgets` para processamento de base de dados.
 * **Ambiente de Desenvolvimento:** GCC (GNU Compiler Collection).
 
-### Estrutura Semântica do Nó
-```c
-typedef struct No {
-    char eh_personagem; // 'N' para Pergunta, 'S' para Título
-    struct No * sim;    // Ponteiro para resposta afirmativa
-    struct No * nao;    // Ponteiro para resposta negativa
-    char conteudo[51];  // Texto da pergunta ou nome do filme/série
-} No;
+## <img src="https://img.shields.io/badge/-Como%20Executar-1A1A1A?style=flat-square&labelColor=1A1A1A&color=FF0000" height="20"> Como Executar
+
+Pré-requisitos: Ter um compilador C instalado (como o GCC em ambientes Linux/Debian).
+
+1.  Clone este repositório:
+    ```bash
+    git clone [https://github.com/isamartins-engcomput/BIG.vp-AKINATOR-ArvoresED2.git](https://github.com/isamartins-engcomput/BIG.vp-AKINATOR-ArvoresED2.git)
+    ```
+2.  Acesse a pasta do projeto:
+    ```bash
+    cd BIG.vp-AKINATOR-ArvoresED2
+    ```
+3.  Compile o código-fonte:
+    ```bash
+    gcc -o morpheus main.c
+    ```
+4.  Execute o programa:
+    ```bash
+    ./morpheus
+    ```
+
+## <img src="https://img.shields.io/badge/-Integrantes%20da%20Equipe-1A1A1A?style=flat-square&labelColor=1A1A1A&color=00FFFF" height="20"> Integrantes da Equipe
+
+* Bruno Felix da Silva
+* Gustavo Bossonal dos Santos
+* Isadora de Souza Martins
+* Pedro Sperandio
+
+---
+> *"Você toma a pílula azul, a história acaba, você acorda na sua cama e acredita no que quiser. Você toma a pílula vermelha, você fica no País das Maravilhas, e eu te mostro até onde vai a toca do coelho."* - Morpheus
