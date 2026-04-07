@@ -151,7 +151,7 @@
 
     int main()
     {
-        char perguntas[5][51] = {"É um filme?", "Tem ação?", "É nacional?", "O tom é leve?", "Tem romance?", "É animação?"};
+        char perguntas[6][51] = {"É um filme?", "Tem ação?", "É nacional?", "O tom é leve?", "Tem romance?", "É animação?"};
         struct No *raiz = NULL;
         preenche_arvore(&raiz, perguntas, 0);
         preenche_folhas(&raiz);
