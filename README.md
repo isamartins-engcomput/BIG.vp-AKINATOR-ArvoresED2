@@ -43,6 +43,9 @@ Pré-requisitos: Ter um compilador C instalado (como o GCC em ambientes Linux/De
 2.  Acesse a pasta do projeto:
     ```bash
     cd BIG.vp-AKINATOR-ArvoresED2
+    cd morpheus
+    cd program
+    cd src
     ```
 3.  Compile o código-fonte:
     ```bash
