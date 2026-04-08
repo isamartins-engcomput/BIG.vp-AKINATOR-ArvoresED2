@@ -58,7 +58,7 @@ Pré-requisitos: Ter um compilador C instalado (como o GCC em ambientes Linux/De
 * Bruno Felix da Silva
 * Gustavo Bossolan dos Santos
 * Isadora de Souza Martins
-* Pedro Sperandio
+* Pedro Lucas Lima Sperandio
 * Vinicius Fonseca Santos Freitas
 
 ---
