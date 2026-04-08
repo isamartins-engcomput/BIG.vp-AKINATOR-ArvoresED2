@@ -37,7 +37,7 @@
 
     void preenche_arvore(struct No ** raiz,  char pergunta[][51], int pergunta_atual)
     {  
-        if(pergunta_atual <= 6)
+        if(pergunta_atual < 6)
         { 
             *raiz = malloc(sizeof(No));
             (*raiz)->eh_personagem = 'n';
