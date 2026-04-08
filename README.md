@@ -56,9 +56,10 @@ Pré-requisitos: Ter um compilador C instalado (como o GCC em ambientes Linux/De
 ## <img src="https://img.shields.io/badge/-Integrantes%20da%20Equipe-1A1A1A?style=flat-square&labelColor=1A1A1A&color=00FFFF" height="20"> Integrantes da Equipe
 
 * Bruno Felix da Silva
-* Gustavo Bossonal dos Santos
+* Gustavo Bossolan dos Santos
 * Isadora de Souza Martins
 * Pedro Sperandio
+* Vinicius Fonseca Santos Freitas
 
 ---
 > *"Você toma a pílula azul, a história acaba, você acorda na sua cama e acredita no que quiser. Você toma a pílula vermelha, você fica no País das Maravilhas, e eu te mostro até onde vai a toca do coelho."* - Morpheus
