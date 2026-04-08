@@ -37,7 +37,7 @@
 
     void preenche_arvore(struct No ** raiz,  char pergunta[][51], int pergunta_atual)
     {  
-        if(pergunta_atual <= 4)
+        if(pergunta_atual <= 6)
         { 
             *raiz = malloc(sizeof(No));
             (*raiz)->eh_personagem = 'n';
@@ -99,7 +99,7 @@
     {
         FILE * filmes_e_series;
         FILE * temp;
-        filmes_e_series = fopen("../../baseDeDados/filmes_e_series", "r");
+        filmes_e_series = fopen("../../baseDeDados/filmes_e_seriesBackup64.txt", "r");
         int quantidade = 0;
         {
             char linha[100];
@@ -151,11 +151,11 @@
 
     int main()
     {
-        char perguntas[5][51] = {"É um filme?", "Tem ação?", "É nacional?", "O tom é leve?", "Tem romance?"};
+        char perguntas[5][51] = {"É um filme?", "Tem ação?", "É nacional?", "O tom é leve?", "Tem romance?", "É animação?"};
         struct No *raiz = NULL;
         preenche_arvore(&raiz, perguntas, 0);
         preenche_folhas(&raiz);
-        printf("Kinema time\n");
+        printf("MORPHEUS\n");
         Akinator(&raiz,perguntas,0);
 
         free(raiz);
