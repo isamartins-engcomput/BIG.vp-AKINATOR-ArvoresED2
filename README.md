@@ -3,15 +3,15 @@
   
   <br>
   
-  <img src="https://img.shields.io/badge/Linguagem-C-00FFFF?style=for-the-badge&logo=c&logoColor=white&labelColor=1A1A1A" alt="C"/>
+  <img src="https://img.shields.io/badge/Linguagem-C-00FFFF?style=for-the-badge&logo=c&logoColor=white&labelColor=435cd5" alt="C"/>
   <img src="https://img.shields.io/badge/Estrutura-Árvores%20Binárias-FF0000?style=for-the-badge&labelColor=1A1A1A" alt="Árvores Binárias"/>
-  <img src="https://img.shields.io/badge/Ponteiros-Sim%20%2F%20Não-00FFFF?style=for-the-badge&labelColor=1A1A1A" alt="Sim/Não Pointers"/>
+  <img src="https://img.shields.io/badge/Ponteiros-Sim%20%2F%20Não-00FFFF?style=for-the-badge&labelColor=435cd5" alt="Sim/Não Pointers"/>
   <img src="https://img.shields.io/badge/Instituição-IFMS-FF0000?style=for-the-badge&labelColor=1A1A1A" alt="IFMS"/>
 </div>
 
 <br>
 
-## <img src="https://img.shields.io/badge/-Sobre%20o%20Projeto-1A1A1A?style=flat-square&labelColor=1A1A1A&color=#2572E8" height="20"> Sobre o Projeto
+## <img src="https://img.shields.io/badge/-Sobre%20o%20Projeto-1A1A1A?style=flat-square&labelColor=1A1A1A&color=2572E8" height="20"> Sobre o Projeto
 
 **Morpheus** é um jogo interativo de adivinhação desenvolvido inteiramente na linguagem **C**. Inspirado no clássico Akinator, o programa atua como um oráculo focado no universo de filmes e séries. Ao iniciar o jogo, o Morpheus guiará o usuário através de perguntas de "Sim" ou "Não" para tentar deduzir o título que o jogador está pensando.
 
@@ -19,14 +19,14 @@ A inteligência por trás do oráculo é baseada em uma **Árvore Binária de De
 
 Este projeto foi desenvolvido como requisito acadêmico para a disciplina de **Estruturas de Dados II**.
 
-## <img src="https://img.shields.io/badge/-Tecnologias%20Utilizadas-1A1A1A?style=flat-square&labelColor=1A1A1A&color=#2572E8 height="20"> Tecnologias Utilizadas
+## <img src="https://img.shields.io/badge/-Tecnologias%20Utilizadas-1A1A1A?style=flat-square&labelColor=1A1A1A&color=2572E8 height="20"> Tecnologias Utilizadas
 
 * **Linguagem:** C padrão (`<stdio.h>`, `<stdlib.h>`, `<string.h>`).
 * **Estruturas de Dados:** Árvores Binárias de Decisão, Structs Otimizados, Ponteiros e Alocação Dinâmica de Memória.
 * **Lógica de Parsing:** Uso eficiente de `strtok` e `fgets` para processamento de base de dados.
 * **Ambiente de Desenvolvimento:** GCC (GNU Compiler Collection).
 
-## <img src="https://img.shields.io/badge/-Como%20Executar-1A1A1A?style=flat-square&labelColor=1A1A1A&color=#2572E8" height="20"> Como Executar
+## <img src="https://img.shields.io/badge/-Como%20Executar-1A1A1A?style=flat-square&labelColor=1A1A1A&color=2572E8" height="20"> Como Executar
 
 Pré-requisitos: Ter um compilador C instalado (como o GCC em ambientes Linux/Debian).
 
@@ -47,7 +47,7 @@ Pré-requisitos: Ter um compilador C instalado (como o GCC em ambientes Linux/De
     ./morpheus
     ```
 
-## <img src="https://img.shields.io/badge/-Integrantes%20da%20Equipe-1A1A1A?style=flat-square&labelColor=1A1A1A&color=#2572E8" height="20"> Integrantes da Equipe
+## <img src="https://img.shields.io/badge/-Integrantes%20da%20Equipe-1A1A1A?style=flat-square&labelColor=1A1A1A&color=2572E8" height="20"> Integrantes da Equipe
 
 * Bruno Felix da Silva
 * Gustavo Bossolan dos Santos
