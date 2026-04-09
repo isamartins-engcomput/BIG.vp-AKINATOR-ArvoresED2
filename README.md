@@ -19,7 +19,7 @@ A inteligência por trás do oráculo é baseada em uma **Árvore Binária de De
 
 Este projeto foi desenvolvido como requisito acadêmico para a disciplina de **Estruturas de Dados II**.
 
-## <img src="https://img.shields.io/badge/-Tecnologias%20Utilizadas-1A1A1A?style=flat-square&labelColor=1A1A1A&color=2572E8 height="20"> Tecnologias Utilizadas
+## <img src="https://img.shields.io/badge/-Tecnologias%20Utilizadas-1A1A1A?style=flat-square&labelColor=1A1A1A&color=2572E8" height="20"> Tecnologias Utilizadas
 
 * **Linguagem:** C padrão (`<stdio.h>`, `<stdlib.h>`, `<string.h>`).
 * **Estruturas de Dados:** Árvores Binárias de Decisão, Structs Otimizados, Ponteiros e Alocação Dinâmica de Memória.
