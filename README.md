@@ -32,11 +32,14 @@ Pré-requisitos: Ter um compilador C instalado (como o GCC em ambientes Linux/De
 
 1.  Clone este repositório:
     ```bash
-    git clone [https://github.com/isamartins-engcomput/BIG.vp-AKINATOR-ArvoresED2.git](https://github.com/isamartins-engcomput/BIG.vp-AKINATOR-ArvoresED2.git)
+    git clone https://github.com/isamartins-engcomput/BIG.vp-AKINATOR-ArvoresED2.git
     ```
 2.  Acesse a pasta do projeto:
     ```bash
     cd BIG.vp-AKINATOR-ArvoresED2
+    cd morpheus
+    cd program
+    cd src
     ```
 3.  Compile o código-fonte:
     ```bash
