@@ -3,10 +3,10 @@
   
   <br>
   
-  <img src="https://img.shields.io/badge/Linguagem-C-00FFFF?style=for-the-badge&logo=c&logoColor=white&labelColor=435cd5" alt="C"/>
-  <img src="https://img.shields.io/badge/Estrutura-Árvores%20Binárias-FF0000?style=for-the-badge&labelColor=1A1A1A" alt="Árvores Binárias"/>
-  <img src="https://img.shields.io/badge/Ponteiros-Sim%20%2F%20Não-00FFFF?style=for-the-badge&labelColor=435cd5" alt="Sim/Não Pointers"/>
-  <img src="https://img.shields.io/badge/Instituição-IFMS-FF0000?style=for-the-badge&labelColor=1A1A1A" alt="IFMS"/>
+  <img src="https://img.shields.io/badge/Linguagem-C-1E3A8A?style=for-the-badge&logo=c&logoColor=white&labelColor=1A1A1A" alt="C"/>
+  <img src="https://img.shields.io/badge/Estrutura-Árvores%20Binárias-DC2626?style=for-the-badge&labelColor=1A1A1A" alt="Árvores Binárias"/>
+  <img src="https://img.shields.io/badge/Ponteiros-Sim%20%2F%20Não-1E3A8A?style=for-the-badge&labelColor=1A1A1A" alt="Sim/Não Pointers"/>
+  <img src="https://img.shields.io/badge/Instituição-IFMS-DC2626?style=for-the-badge&labelColor=1A1A1A" alt="IFMS"/>
 </div>
 
 <br>
@@ -19,14 +19,14 @@ A inteligência por trás do oráculo é baseada em uma **Árvore Binária de De
 
 Este projeto foi desenvolvido como requisito acadêmico para a disciplina de **Estruturas de Dados II**.
 
-## <img src="https://img.shields.io/badge/-Tecnologias%20Utilizadas-FBBF24?style=flat-square&labelColor=1A1A1A" height="20"> Tecnologias Utilizadas
+## <img src="https://img.shields.io/badge/-Tecnologias%20Utilizadas-DC2626?style=flat-square&labelColor=1A1A1A" height="20"> Tecnologias Utilizadas
 
 * **Linguagem:** C padrão (`<stdio.h>`, `<stdlib.h>`, `<string.h>`).
 * **Estruturas de Dados:** Árvores Binárias de Decisão, Structs Otimizados, Ponteiros e Alocação Dinâmica de Memória.
 * **Lógica de Parsing:** Uso eficiente de `strtok` e `fgets` para processamento de base de dados.
 * **Ambiente de Desenvolvimento:** GCC (GNU Compiler Collection).
 
-## <img src="https://img.shields.io/badge/-Como%20Executar-1E3A8A?style=flat-square&labelColor=1A1A1A" height="20"> Como Executar
+## <img src="https://img.shields.io/badge/-Como%20Executar-DC2626?style=flat-square&labelColor=1A1A1A" height="20"> Como Executar
 
 Pré-requisitos: Ter um compilador C instalado (como o GCC em ambientes Linux/Debian).
 
