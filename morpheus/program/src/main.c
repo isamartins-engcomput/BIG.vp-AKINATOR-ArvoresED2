@@ -81,33 +81,33 @@ void processa_linha(struct No ** raiz, char * linha)
 
 void preenche_folhas(struct No ** raiz)
 {
-    FILE * filmes_e_series;
-    char filename[] = "filmes_e_series.txt"; 
-    filmes_e_series = fopen(filename, "r");
+    FILE * dataSet;
+    char filename[] = "morpheus/dataBase/dataSet.txt";
+    dataSet = fopen(filename, "r");
     
-    if(filmes_e_series == NULL)
+    if(dataSet == NULL)
     {
-        filmes_e_series = fopen(filename, "w");
+        dataSet = fopen(filename, "w");
         // ATENÇÃO AQUI: Agora são 6 vírgulas (6 respostas) antes do nome do filme!
-        fprintf(filmes_e_series, "S,N,N,N,N,N,Interestelar\n"); 
-        fprintf(filmes_e_series, "S,S,N,S,S,N,Scott Pilgrim contra o Mundo\n");        
-        fprintf(filmes_e_series, "S,S,S,N,N,N,Tropa de Elite\n");    
-        fprintf(filmes_e_series, "N,N,S,S,S,N,Todas as Flores\n");  
-        fprintf(filmes_e_series, "S,N,S,S,S,N,Lisbela e o Prisioneiro\n"); 
-        fprintf(filmes_e_series, "S,S,N,S,N,S,Homem-Aranha no Aranhaverso\n"); // Exemplo respondendo SIM para animação
-        fclose(filmes_e_series);
-        filmes_e_series = fopen(filename, "r"); 
+        fprintf(dataSet, "S,N,N,N,N,N,Interestelar\n"); 
+        fprintf(dataSet, "S,S,N,S,S,N,Scott Pilgrim contra o Mundo\n");        
+        fprintf(dataSet, "S,S,S,N,N,N,Tropa de Elite\n");    
+        fprintf(dataSet, "N,N,S,S,S,N,Todas as Flores\n");  
+        fprintf(dataSet, "S,N,S,S,S,N,Lisbela e o Prisioneiro\n"); 
+        fprintf(dataSet, "S,S,N,S,N,S,Homem-Aranha no Aranhaverso\n"); // Exemplo respondendo SIM para animação
+        fclose(dataSet);
+        dataSet = fopen(filename, "r"); 
     }
 
-    if(filmes_e_series != NULL)
+    if(dataSet != NULL)
     {
         char linha[256];
-        while(fgets(linha,sizeof(linha),filmes_e_series) != NULL)
+        while(fgets(linha,sizeof(linha),dataSet) != NULL)
         {
             linha[strcspn(linha, "\n")] = 0; 
             processa_linha(raiz, linha);
         }
-        fclose(filmes_e_series); 
+        fclose(dataSet); 
     }
 }
 
@@ -158,17 +158,17 @@ int main(void)
     preenche_folhas(&raiz); 
 
     // Textura principal
-    Texture2D textura_morpheus = LoadTexture("begin_end.png");
+    Texture2D textura_morpheus = LoadTexture("morpheus/program/include/begin_end.png");
     
     // Array aumentado para armazenar as 6 imagens (0 a 5)
     Texture2D texturas_perguntas[6];
-    texturas_perguntas[0] = LoadTexture("pergunta1.png");
-    texturas_perguntas[1] = LoadTexture("pergunta2.png");
-    texturas_perguntas[2] = LoadTexture("pergunta3.png");
-    texturas_perguntas[3] = LoadTexture("pergunta4.png");
-    texturas_perguntas[4] = LoadTexture("pergunta5.png");
-    texturas_perguntas[5] = LoadTexture("pergunta6.png"); // Nova imagem
- 
+    texturas_perguntas[0] = LoadTexture("morpheus/program/include/pergunta1.png");
+    texturas_perguntas[1] = LoadTexture("morpheus/program/include/pergunta2.png");
+    texturas_perguntas[2] = LoadTexture("morpheus/program/include/pergunta3.png");
+    texturas_perguntas[3] = LoadTexture("morpheus/program/include/pergunta4.png");
+    texturas_perguntas[4] = LoadTexture("morpheus/program/include/pergunta5.png");
+    texturas_perguntas[5] = LoadTexture("morpheus/program/include/pergunta6.png"); 
+
     No *noAtual = raiz;
     int pergunta_contador = 0;
     bool fim_de_jogo = false;

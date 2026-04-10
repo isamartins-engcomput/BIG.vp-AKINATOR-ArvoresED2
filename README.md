@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/isamartins-engcomput/BIG.vp-AKINATOR-ArvoresED2/main/akinator/programa/include/logoMORPHEUSblackBackground.gif" alt="Morpheus Logo Animated" width="400">
+  <img src="https://raw.githubusercontent.com/isamartins-engcomput/projetoAkinatorMORPHEUS/BIG.vp-AKINATOR-ArvoresED2/morpheusLogoAnimationBlack.gif" alt="Morpheus Logo Animated" width="400">
   
   <br>
   
@@ -36,14 +36,11 @@ Pré-requisitos: Ter um compilador C instalado (como o GCC em ambientes Linux/De
     ```
 2.  Acesse a pasta do projeto:
     ```bash
-    cd BIG.vp-AKINATOR-ArvoresED2
-    cd morpheus
-    cd program
-    cd src
+    cd BIG.vp-AKINATOR-ArvoresED2/morpheus/program/src
     ```
 3.  Compile o código-fonte:
     ```bash
-    gcc -o morpheus main.c
+    gcc main.c -o morpheus -lraylib -lGL -lm -lpthread -ldl -lrt -lX11
     ```
 4.  Execute o programa:
     ```bash
