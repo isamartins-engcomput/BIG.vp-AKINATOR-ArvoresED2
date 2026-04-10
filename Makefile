@@ -20,7 +20,7 @@ INCLUDE_PATH = -I$(LIB_DIR)/src
 # Nova estrutura de diretórios do projeto
 SRC_DIR = morpheus/program/src
 SRC = $(SRC_DIR)/main.c
-TARGET = morpheus$(EXT)
+TARGET = morpheusGame$(EXT)
 
 # 3. Configurações do Compilador
 CC = gcc
