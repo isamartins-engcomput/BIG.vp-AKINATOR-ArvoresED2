@@ -1,6 +1,6 @@
 <div align="center">
   <img src="https://raw.githubusercontent.com/isamartins-engcomput/BIG.vp-AKINATOR-ArvoresED2/versaoSemTablet/morpheusLogoAnimationBlack.gif" alt="Morpheus Logo Animated" width="400">
-</div>
+
   
   <br>
   
