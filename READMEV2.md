@@ -33,18 +33,18 @@ Este projeto foi desenvolvido como requisito acadêmico para a disciplina de **E
 ## ![Como Executar](https://img.shields.io/badge/-Como_Executar-FBC00E?style=for-the-badge&labelColor=1A1A1A)
 
 ### ![Pré-requisitos](https://img.shields.io/badge/-Pré--requisitos-FFFFFF?style=flat-square&labelColor=1A1A1A)
-Ter o compilador `gcc` e a ferramenta `make` instalados no seu sistema (ambientes Linux/Debian).
+Ter o compilador `gcc` e a ferramenta `make` e `git` instalados no seu sistema (ambientes Linux/Debian).
 
 #### ![Como Instalar](https://img.shields.io/badge/-Como_Instalar-FFFFFF?style=flat-square&labelColor=1A1A1A)
 ```bash
 sudo apt update
 sudo apt install build-essential
-sudo apt install gcc make
+sudo apt install gcc make git
 ```
 
 1.  Clone este repositório:
     ```bash
-    git clone [https://github.com/isamartins-engcomput/BIG.vp-AKINATOR-ArvoresED2.git](https://github.com/isamartins-engcomput/BIG.vp-AKINATOR-ArvoresED2.git)
+    git clone https://github.com/isamartins-engcomput/BIG.vp-AKINATOR-ArvoresED2.git
     ```
 2.  Acesse a pasta principal do projeto (onde o arquivo Makefile está localizado):
     ```bash
