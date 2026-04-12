@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://github.com/isamartins-engcomput/BIG.vp-AKINATOR-ArvoresED2/blob/versaoSemTablet/morpheusLogoAnimationBlack.gif?raw=true" alt="Morpheus Logo Animated" width="400">
+  <img src="https://github.com/isamartins-engcomput/BIG.vp-AKINATOR-ArvoresED2/blob/main/morpheusLogo.gif?raw=true" alt="Morpheus Logo Animated" width="400">
   
   <br><br>
   
