@@ -2,6 +2,8 @@
   <img src="./screenshots/morpheusLogo.gif" alt="Animação"/>
 </div>
 
+<br>
+
 <div align="center">
   <img src="https://img.shields.io/badge/Linguagem-C-4E6FF1?style=for-the-badge&logo=c&logoColor=white&labelColor=1A1A1A" alt="C"/>
   <img src="https://img.shields.io/badge/Estrutura-Árvores_Binárias-ED1C24?style=for-the-badge&labelColor=1A1A1A" alt="Árvores Binárias"/>
@@ -66,7 +68,27 @@ sudo apt install gcc make git
 
 <br>
 
-## ![Desenvolvedores / Integrantes](https://img.shields.io/badge/-Desenvolvedores_%2F_Integrantes-4E6FF1?style=for-the-badge&labelColor=1A1A1A)
+## ![Estruturação das Pastas](https://img.shields.io/badge/-Estruturação_das_Pastas-4E6FF1?style=for-the-badge&labelColor=1A1A1A)
+
+A organização do projeto separa o código-fonte, os assets visuais e a base de dados em:
+
+```bash
+BIG.vp-AKINATOR-ArvoresED2
+├── morpheus
+│   ├── dataBase
+│   │   └── dataSet.txt         # Banco de dados (respostas e títulos)
+│   └── program
+│       ├── include             # Assets (imagens .png e áudio .mp3)
+│       └── src
+│           └── main.c          # Código-fonte principal
+├── screenshots                 # Arquivos visuais do README.md
+├── raylib                      # Gerada automaticamente após o make (Biblioteca gráfica)
+├── Makefile                    # Automação de compilação
+├── README.md                   # Documentação
+└── morpheusGame                # Executável gerado após o make
+```
+
+## ![Desenvolvedores / Integrantes](https://img.shields.io/badge/-Desenvolvedores_%2F_Integrantes-ED1C24?style=for-the-badge&labelColor=1A1A1A)
 
 * Bruno Felix da Silva
 * Gustavo Bossolan dos Santos
