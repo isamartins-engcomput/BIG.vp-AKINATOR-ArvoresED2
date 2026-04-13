@@ -1,8 +1,8 @@
 <div align="center">
-  <img src="https://github.com/isamartins-engcomput/BIG.vp-AKINATOR-ArvoresED2/blob/main/morpheusLogo.gif?raw=true" alt="Morpheus Logo Animated" width="400">
-  
-  <br><br>
-  
+  <img src="./screenshots/morpheusLogo.gif" alt="Animação"/>
+</div>
+
+<div align="center">
   <img src="https://img.shields.io/badge/Linguagem-C-4E6FF1?style=for-the-badge&logo=c&logoColor=white&labelColor=1A1A1A" alt="C"/>
   <img src="https://img.shields.io/badge/Estrutura-Árvores_Binárias-ED1C24?style=for-the-badge&labelColor=1A1A1A" alt="Árvores Binárias"/>
   <img src="https://img.shields.io/badge/Curso-Engenharia_de_Computação_IV-FBC00E?style=for-the-badge&labelColor=1A1A1A" alt="Engenharia de Computação IV"/>
@@ -15,7 +15,11 @@
 
 **Morpheus** é um jogo interativo de adivinhação desenvolvido inteiramente na linguagem **C**. Inspirado no clássico Akinator, o programa atua como um oráculo focado no universo de filmes e séries. Ao iniciar o jogo, o Morpheus guiará o usuário através de perguntas de "Sim" ou "Não" para tentar deduzir o título que o jogador está pensando.
 
-A inteligência por trás do oráculo é baseada em uma **Árvore Binária de Decisão**. O projeto foi estruturado com uma semântica clara e eficiente, onde cada nó interno representa uma pergunta diagnóstica e as folhas (`sim` e `nao`) representam os títulos finais das obras.
+<div align="center">
+  <img src="./screenshots/telaInicial.png" alt="Tela Inicial do Jogo" width="50%"/>
+</div>
+
+A inteligência por trás do oráculo é baseada em uma **Árvore Binária de Decisão**. O projeto foi estruturado com uma semântica clara e eficiente, onde cada nó interno representa uma pergunta diagnóstica e as folhas (`sim` e `não`) representam os títulos finais das obras.
 
 Este projeto foi desenvolvido como requisito acadêmico para a disciplina de **Estruturas de Dados II**, sob a orientação do docente **Alex Fernando de Araujo**.
 
@@ -41,6 +45,8 @@ sudo apt update
 sudo apt install build-essential
 sudo apt install gcc make git
 ```
+#### ![Como Compilar](https://img.shields.io/badge/-Como_Compilar-FFFFFF?style=flat-square&labelColor=1A1A1A)
+
 
 1.  Clone este repositório:
     ```bash
@@ -56,6 +62,8 @@ sudo apt install gcc make git
     ```
     *(O script fará o download da biblioteca Raylib, realizará a compilação do código e abrirá a janela do jogo automaticamente).*
 
+    ***Nota para usuários Linux:** O Makefile foi configurado para instalar as dependências gráficas do X11 e de áudio automaticamente na primeira execução. O terminal poderá solicitar sua senha (sudo) para o apt-get.*
+
 <br>
 
 ## ![Desenvolvedores / Integrantes](https://img.shields.io/badge/-Desenvolvedores_%2F_Integrantes-4E6FF1?style=for-the-badge&labelColor=1A1A1A)
@@ -65,10 +73,6 @@ sudo apt install gcc make git
 * Isadora de Souza Martins
 * Pedro Lucas Lima Sperandio
 * Vinicius Fonseca Santos Freitas
-
-## ![Público](https://img.shields.io/badge/-Público-ED1C24?style=for-the-badge&labelColor=1A1A1A)
-
-* Público Geral
 
 ---
 > *"Você toma a pílula azul, a história acaba, você acorda na sua cama e acredita no que quiser. Você toma a pílula vermelha, você fica no País das Maravilhas, e eu te mostro até onde vai a toca do coelho."* - Morpheus
