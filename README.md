@@ -11,8 +11,6 @@
   <img src="https://img.shields.io/badge/Instituição-IFMS-FFFFFF?style=for-the-badge&labelColor=1A1A1A" alt="IFMS"/>
 </div>
 
-<br>
-
 ## ![Sobre o Projeto](https://img.shields.io/badge/-Sobre_o_Projeto-4E6FF1?style=for-the-badge&labelColor=1A1A1A)
 
 **Morpheus** é um jogo interativo de adivinhação desenvolvido inteiramente na linguagem **C**. Inspirado no clássico Akinator, o programa atua como um oráculo focado no universo de filmes e séries. Ao iniciar o jogo, o Morpheus guiará o usuário através de perguntas de "Sim" ou "Não" para tentar deduzir o título que o jogador está pensando.
