@@ -66,8 +66,6 @@ sudo apt install gcc make git
 
     ***Nota para usuários Linux:** O Makefile foi configurado para instalar as dependências gráficas do X11 e de áudio automaticamente na primeira execução. O terminal poderá solicitar sua senha (sudo) para o apt-get.*
 
-<br>
-
 ## ![Estruturação das Pastas](https://img.shields.io/badge/-Estruturação_das_Pastas-4E6FF1?style=for-the-badge&labelColor=1A1A1A)
 
 A organização do projeto separa o código-fonte, os assets visuais e a base de dados em:
