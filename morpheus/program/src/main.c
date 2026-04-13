@@ -3,7 +3,6 @@
 #include <string.h>
 #include "raylib.h"
 
-// --- PALETA DE CORES EXTRAÍDA DA IMAGEM ---
 #define PALETTE_BG      (Color){ 247, 247, 247, 255 } 
 #define PALETTE_BLUE    (Color){ 78, 111, 241, 255 }  
 #define PALETTE_LIGHTB  (Color){ 142, 212, 235, 255 } 
@@ -11,7 +10,6 @@
 #define PALETTE_DARKRED (Color){ 144, 12, 39, 255 }   
 #define PALETTE_YELLOW  (Color){ 251, 192, 14, 255 }  
 
-// --- ESTRUTURA DO BACKEND ---
 typedef struct No
 {
     char eh_personagem; 
@@ -108,33 +106,32 @@ void processa_linha(struct No ** raiz, char * linha)
 
 void preenche_folhas(struct No ** raiz)
 {
-    FILE * filmes_e_series;
-    char filename[] = "filmes_e_series.txt"; 
-    filmes_e_series = fopen(filename, "r");
+    FILE * dataSet;
+    char filename[] = "morpheus/dataBase/dataSet.txt"; 
+    dataSet = fopen(filename, "r");
     
-    if(filmes_e_series == NULL)
+    if(dataSet == NULL)
     {
-        filmes_e_series = fopen(filename, "w");
-        // ATENÇÃO AQUI: Agora são 6 vírgulas (6 respostas) antes do nome do filme!
-        fprintf(filmes_e_series, "S,N,N,N,N,N,Interestelar\n"); 
-        fprintf(filmes_e_series, "S,S,N,S,S,N,Scott Pilgrim contra o Mundo\n");        
-        fprintf(filmes_e_series, "S,S,S,N,N,N,Tropa de Elite\n");    
-        fprintf(filmes_e_series, "N,N,S,S,S,N,Todas as Flores\n");  
-        fprintf(filmes_e_series, "S,N,S,S,S,N,Lisbela e o Prisioneiro\n"); 
-        fprintf(filmes_e_series, "S,S,N,S,N,S,Homem-Aranha no Aranhaverso\n"); // Exemplo respondendo SIM para animação
-        fclose(filmes_e_series);
-        filmes_e_series = fopen(filename, "r"); 
+        dataSet = fopen(filename, "w");
+        fprintf(dataSet, "S,N,N,N,N,N,Interestelar\n"); 
+        fprintf(dataSet, "S,S,N,S,S,N,Scott Pilgrim contra o Mundo\n");        
+        fprintf(dataSet, "S,S,S,N,N,N,Tropa de Elite\n");    
+        fprintf(dataSet, "N,N,S,S,S,N,Todas as Flores\n");  
+        fprintf(dataSet, "S,N,S,S,S,N,Lisbela e o Prisioneiro\n"); 
+        fprintf(dataSet, "S,S,N,S,N,S,Homem-Aranha no Aranhaverso\n"); 
+        fclose(dataSet);
+        dataSet = fopen(filename, "r"); 
     }
 
-    if(filmes_e_series != NULL)
+    if(dataSet != NULL)
     {
         char linha[256];
-        while(fgets(linha,sizeof(linha),filmes_e_series) != NULL)
+        while(fgets(linha,sizeof(linha),dataSet) != NULL)
         {
             linha[strcspn(linha, "\n")] = 0; 
             processa_linha(raiz, linha);
         }
-        fclose(filmes_e_series); 
+        fclose(dataSet); 
     }
 }
 
@@ -150,7 +147,6 @@ void libera_arvore(No * no)
     free(no);
 }
 
-// --- FRONTEND (RAYLIB) ---
 bool DrawButton(Rectangle rec, const char *text, int fontSize, Color color, Color textColor)
 {
     Vector2 mousePoint = GetMousePosition();
@@ -185,17 +181,14 @@ int main(void)
     InitAudioDevice();
     SetTargetFPS(60);
 
-    // Array aumentado para tamanho 6 e aspas corrigidas na nova pergunta
     char perguntas[6][51] = {"É um filme?", "Tem ação?", "É nacional?", "O tom é leve?", "Tem romance?", "É animação?"};
     int total_perguntas = 6;
     struct No *raiz = NULL;
     preenche_arvore(&raiz, perguntas, 0, total_perguntas);
     preenche_folhas(&raiz); 
 
-    // Textura principal
     Texture2D textura_morpheus = LoadTexture("morpheus/program/include/begin_end.png");
     
-    // Array aumentado para armazenar as 6 imagens (0 a 5)
     Texture2D texturas_perguntas[6];
     Music tema = LoadMusicStream("morpheus/program/include/song.mp3");
     PlayMusicStream(tema);
@@ -309,7 +302,6 @@ int main(void)
                 int qWidth = MeasureText(noAtual->conteudo, fontSizeContent);
                 DrawText(noAtual->conteudo, screenWidth/2 - qWidth/2, textY, fontSizeContent, WHITE);
                 
-                // Puxa a imagem correta baseada no número da pergunta atual
                 Texture2D textura_atual = texturas_perguntas[pergunta_contador];
                 if(textura_atual.id > 0) 
                 {
@@ -327,7 +319,6 @@ int main(void)
     }
 
     UnloadTexture(textura_morpheus);
-    // Loop ajustado para limpar as 6 imagens da memória
     for (int i = 0; i < 6; i++) 
     {
         UnloadTexture(texturas_perguntas[i]);
